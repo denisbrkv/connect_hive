@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'example_run.dart';
 
 class Example extends StatefulWidget {
@@ -16,7 +15,8 @@ class _ExampleState extends State<Example> {
     return Scaffold(
       body: SafeArea(
           child: Center(
-        child: ElevatedButton(onPressed: () {}, child: Text('Жми сюда')),
+        child: ElevatedButton(
+            onPressed: () => model.doSome(), child: const Text('Жми сюда')),
       )),
     );
   }
