@@ -12,6 +12,8 @@ class ExampleRun {
     print(name);
     final age = box.get('age') as int?;
     print(age);
+    final surname = box.get('surname', defaultValue: 'Ivanov') as String;
+    print(surname);
     box.close();
   }
 }
